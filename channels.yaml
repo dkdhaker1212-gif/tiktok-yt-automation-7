@@ -1,0 +1,60 @@
+# THE channel config. Loaded and validated by src/config.py.
+# One entry per channel. This repo hosts exactly one.
+
+channels:
+  - id: channel_7                         # unique; used in DB, logs, secret names
+    tiktok_username: "village_craft1"     # no @  -- woodworking / handmade tools / clever builds
+    youtube_channel_name: "WOODVORA"
+    owner_email: "frt763147@gmail.com"
+
+    google_credentials_file: "credentials/channel_7_client_secret.json"
+    oauth_token_file: "tokens/channel_7_token.json"
+
+    videos_per_day: 1
+    description_footer: ""
+    default_tags: [woodworking, diy, handmade, carpentry, wood project, satisfying build,
+                   life hack, homemade tools, craftsmanship, workshop, wood carving,
+                   clever idea, diy tools, wood work, engineering, handmade craft,
+                   satisfying, skills, genius idea]
+    youtube_category_id: "26"             # 26 Howto & Style
+    enabled: true
+    max_retry_days: 7
+    shorts_max_seconds: 180
+    upload_mode: short_only               # newest unposted first
+    max_download_candidates: 20
+
+    use_ai_seo: true
+    edit:
+      enabled: true
+      zoom_crop_pct: 2.0
+      speed: 1.03
+      hflip: false
+      fade_seconds: 0.25
+      sharpen: true
+      denoise: false
+      saturation: 1.05
+      contrast: 1.05
+      loudnorm: true
+      volume_gain_db: 0.0
+      blur_regions: []
+      brand_overlay:                     # small corner mark = the channel's own logo
+        enabled: true
+        image: "assets/brand_badge.png"
+        corner: tr
+        width_pct: 10
+        margin_pct: 3
+        opacity: 0.92
+
+    thumbnail:
+      enabled: true
+      hook_source: title
+      position: bottom
+      accent_rgb: [201, 162, 75]
+      hook_templates:
+        - "GENIUS IDEA"
+        - "BUILT BY HAND"
+        - "WAIT FOR IT"
+        - "SO SATISFYING"
+
+    slot_publish_times_utc:               # this IS the cron fire time
+      1: "17:00"                          # 1:00 PM US Eastern = 10:30 PM IST
