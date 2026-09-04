@@ -20,7 +20,7 @@ channels:
     enabled: true
     max_retry_days: 7
     shorts_max_seconds: 180
-    upload_mode: short_only               # newest unposted first
+    upload_mode: popular_only             # always pick the most-viewed unposted video
     max_download_candidates: 20
 
     use_ai_seo: true
