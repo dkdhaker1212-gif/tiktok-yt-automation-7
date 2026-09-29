@@ -3,8 +3,8 @@
 
 channels:
   - id: channel_7                         # unique; used in DB, logs, secret names
-    tiktok_username: "mr..unclog8"        # no @  -- satisfying storm-drain / culvert unclogging, huge water release. 103K followers / 1.3M likes, pure TikTok-native (no YouTube channel -> no reused-content claim risk). Swapped in from the dead "WOODVORA" DIY-weapons source (0 subs / 0 views after 6 vids, off-niche + weapon-policy risk).
-    tiktok_username_backup: "mrdoma46"  # no @ -- emergency-only fallback, used automatically if the primary source runs dry or every candidate it offers fails to post. 131.5K followers, drain unclogging (has a YouTube channel too -- backup-only, not vetted as strictly as a primary source).
+    tiktok_username: "drainingdebris"     # no @  -- satisfying storm-drain / culvert unclogging. 29.4K followers / 251.7K likes, no bio, no YouTube found (checked directly, no matching channel). Promoted 2026-09-30: mr..unclog8 (same niche, also verified clean) was getting ~0-40 views for weeks despite being a good-fit source -- moved to backup instead of dropped, since the niche itself still looks viable and the underperformance may be more about the cold channel than this specific source.
+    tiktok_username_backup: "mr..unclog8"  # no @ -- emergency-only fallback (the previous primary). 103K followers, same niche, verified no YouTube channel.
     youtube_channel_name: "Drain Rush"
     owner_email: "frt763147@gmail.com"
 
